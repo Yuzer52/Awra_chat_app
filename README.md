@@ -1,6 +1,8 @@
 # AwraChat
 
 AwraChat is a modern real-time chat application built with **React** and **Firebase**. It enables users to send messages, share photos, and manage privacy settings in a secure and efficient manner.
+![Screenshot 2024-10-17 170504](https://github.com/user-attachments/assets/e6b64e06-133a-475b-9769-ae544fca4748)
+
 
 ## Features
 
