@@ -1,7 +1,3 @@
-Here’s a well-structured and editable **README** file using markdown syntax (`#`, `*`, etc.) that you can use for GitHub. This will allow for easy reading and editing as needed:
-
----
-
 # AwraChat
 
 AwraChat is a modern real-time chat application built with **React** and **Firebase**. It enables users to send messages, share photos, and manage privacy settings in a secure and efficient manner.
