@@ -1,0 +1,81 @@
+.createGroup {
+  width: max-content;
+  height: max-content;
+  padding: 30px;
+  background-color: rgba(17, 25, 40, 0.781);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.groupAvatar {
+  width: 50px;
+  height: 50px;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #555;
+}
+
+.groupInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.groupInfo input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.createBtn {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatDisplay {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.chatTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addUserBtn {
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.groupDescription {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
