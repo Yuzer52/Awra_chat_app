@@ -5,12 +5,13 @@
   background-color: rgba(17, 25, 40, 0.781);
   border-radius: 10px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 100px; /* Adjusted from 0 to 100px */
+  left: 50%;
+  transform: translateX(-50%);
   margin: auto;
+  z-index: 10; /* Ensure it appears above other elements */
 }
+
 
 .groupHeader {
   display: flex;
