@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    
   }
   
   .user {
@@ -42,12 +41,12 @@
     transform: scale(1.1); /* Slightly enlarges icons on hover */
   }
   
-  /* Styles for the dropdown menu */
+  /* Dropdown menu styles */
   .settingsDropdown {
     position: absolute;
-    top: 60px; /* Adjusted for more space */
+    top: 60px;
     right: 0;
-    background-color: rgba(17, 25, 40, 0.9);
+    background-color: rgba(17, 25, 40, 0.95);
     border-radius: 8px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     z-index: 1;
@@ -68,27 +67,32 @@
     background-color: rgba(57, 85, 137, 0.5);
   }
   
-  /* Improved styling for the Update Info popup */
-  .updateInfo {
-    position: absolute;
-    top: 120px;
-    right: 0;
-    background-color: rgba(17, 25, 40, 0.9);
+  /* Popup form styling */
+  .updateInfo,
+  .deleteConfirm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(17, 25, 40, 0.95);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    width: 250px;
+    width: 300px;
     z-index: 2;
+    text-align: center;
   }
   
-  .updateInfo h3 {
-    margin: 0;
-    margin-bottom: 10px;
+  .updateInfo h3,
+  .deleteConfirm p {
+    margin: 0 0 15px;
     font-size: 18px;
-    color: #333;
+    color: #ffffff;
   }
   
-  .updateInfo input {
+  /* Shared input and button styles */
+  .updateInfo input,
+  .updateInfo textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -97,7 +101,8 @@
     font-size: 14px;
   }
   
-  .updateInfo button {
+  .updateInfo button,
+  .deleteConfirm button {
     padding: 8px 12px;
     margin-right: 10px;
     background-color: #007bff;
@@ -109,18 +114,22 @@
     transition: background-color 0.3s ease;
   }
   
-  .updateInfo button:hover {
+  .updateInfo button:hover,
+  .deleteConfirm button:hover {
     background-color: #0056b3;
   }
   
-  .updateInfo button:last-child {
+  .updateInfo button:last-child,
+  .deleteConfirm button:last-child {
     background-color: #ccc;
   }
   
-  .updateInfo button:last-child:hover {
+  .updateInfo button:last-child:hover,
+  .deleteConfirm button:last-child:hover {
     background-color: #aaa;
   }
   
+  /* Specific styling for current avatar preview */
   .currentAvatar {
     width: 100px;
     height: 100px;
@@ -128,3 +137,68 @@
     object-fit: cover;
     margin-bottom: 15px;
   }
+  
+  /* Delete confirmation popup */
+  .deleteConfirm p {
+    color: #ff4444;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .deleteConfirm button {
+    background-color: #ff4444;
+  }
+  
+  .deleteConfirm button:last-child {
+    background-color: #ccc;
+  }
+  
+  .deleteConfirm button:last-child:hover {
+    background-color: #aaa;
+  }
+  
+
+  .privacyPolicy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95); /* Light background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Adjust width as needed */
+    max-height: 80%; /* Prevent it from being too tall */
+    overflow-y: auto; /* Allow scrolling for overflow content */
+    z-index: 3; /* Ensure it’s above other content */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .privacyPolicy h2 {
+    font-size: 24px; /* Title size */
+    margin-bottom: 15px;
+    color: #333; /* Dark color for better readability */
+  }
+  
+  .privacyPolicy p {
+    margin: 10px 0; /* Add spacing between paragraphs */
+    line-height: 1.6; /* Improved line spacing for readability */
+    color: #555; /* Slightly darker text for better contrast */
+  }
+  
+  .privacyPolicy button {
+    padding: 8px 12px;
+    margin-top: 15px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .privacyPolicy button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
